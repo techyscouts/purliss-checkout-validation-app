@@ -1,0 +1,23 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "c7297c9af769bd7f45e6db5d5ec718cb"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+name = "Checkout Validation Purlisse"
+handle = "checkout-validation-purlisse"
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_discounts,write_discounts_allocator_functions,write_products"
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[pos]
+embedded = false
+
+[build]
+include_config_on_deploy = true
