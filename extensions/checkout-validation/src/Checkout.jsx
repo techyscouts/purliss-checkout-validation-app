@@ -16,7 +16,7 @@ function Extension() {
 
   // Check if the product with ID 2341234223 exists in the cart
   const productInCart = cartLines.some(
-    (line) => line.merchandise.product.id == "gid://shopify/Product/8340473807026"
+    (line) => line.merchandise.product.id == "gid://shopify/Product/8406217687218"
   );
 
 
